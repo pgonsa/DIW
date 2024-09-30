@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ol{list-style-type: lower-latin;}
+        #i{list-style-type: lower-roman;}
+        .circle{list-style: inside;}
+        .square{list-style: square;}
+        .latin li{list-style-type: decimal;}
+    </style>
+    <title>Listas</title>
+</head>
+<body>
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ol>
+    <br>
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+    </ul>
+    <br>
+    <dl>
+        <dt>Primer elemento
+            <dd>Definición primer elemento</dd>
+        </dt>
+        <dt>Segundo elemento
+            <dd>Definición segundo elemento</dd>
+        </dt>
+        <dt>tercer elemento
+            <dd>Definicióntercer elemento</dd>
+        </dt>
+        <dt>cuarto elemento
+            <dd>Definición del cuarto elemento</dd>
+        </dt>
+    </dl>
+    <!--Práctica Listas-->
+    <ol id="i">
+        <li>General Aviation
+            <ol id="ab">
+                <li>Single Aviation Craft</li>
+                <li>Dual Engine Aircraft</li>
+            </ol>
+        </li>
+        <li>Comercial Aviationgine
+            <ul>
+                <li class="circle">Dual Engine</li>
+                <li class="circle">Tri-Engine</li>
+            </ul>
+        </li>
+    </ol>
+    <ul>
+        <li class="square">A
+            <ul>
+                <li class="circle">B
+                    <ol class="latin">
+                        <li>C</li>
+                        <li>D</li>
+                    </ol>
+                </li>
+                <li class="circle">E
+                    <ul>
+                        <li>F</li>
+                        <li>G</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="square">B</li>
+    </ul>
+</body>
+</html>
