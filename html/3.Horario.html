@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{border: 4px solid gray;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;}
+        th{border: 3px solid gray;
+            background-color: palegoldenrod;
+            width: 120px;
+            height: 80px;}
+        td{border: 2px solid gray;
+            width: 120px;
+            height: 80px;}
+        .ddiw{ background-color: plum}
+        .ddaw{background-color: palegreen;}
+        .dwees{background-color: peachpuff;}
+        .eeie{background-color: paleturquoise;}
+        .dweec{background-color: pink;}
+        .recreo{background-color: palevioletred;}
+        .ddiw:hover{background-color: aliceblue;}
+        .ddaw:hover{background-color: aliceblue;}
+        .dwees:hover{background-color: aliceblue;}
+        .eeie:hover{background-color: aliceblue;}
+        .dweec:hover{background-color: aliceblue;}
+        .recreo:hover{background-color: aliceblue;}
+    </style>
+    <title>Horario</title>
+</head>
+<body>
+    <!--Crea la tabla con tu horario de clase. Si algún módulo se imparte en varias horas seguidas, tenlo en cuenta para combinar las celdas.
+
+    Da el estilo que más se ajuste a tu personalidad, sin ser demasiado sobrio ni tampoco una explosión de color.
+
+    -->
+
+    <table>
+       <tr>
+            <th>HORARIO</th>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIÉRCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+       </tr>
+       <tr>
+            <th>16:30 - 17:20</th>
+            <td rowspan="3" class="ddiw">Diseño de Interfaces Web</td>
+            <td rowspan="2" class="ddiw">Diseño de Interfaces Web</td>
+            <td rowspan="2" class="ddaw">Despliegue de Aplicaciones Web</td>
+            <td rowspan="2" class="ddaw">Despliegue de Aplicaciones Web</td>
+            <td rowspan="2" class="ddiw">Diseño de Interfaces Web</td>
+       </tr>
+       <tr>
+            <th>17:20 - 18:10</th>
+
+
+
+
+       </tr>
+       <tr>
+            <th>18:10 - 19:00</th>
+
+            <td  class="eeie">Empresa e Iniciativa Emprendedora</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+
+       </tr>
+       <tr>
+            <th>19:00 - 19:15</th>
+            <td colspan="5" class="recreo">RECREO</td>
+       </tr>
+       <tr>
+            <th>19:15 - 20:05</th>
+            <td class="ddaw">Despliegue de Aplicaciones Web</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+            <td class="dweec">Desarrollo Web en Entorno Cliente</td>
+       </tr>
+       <tr>
+            <th>20:05 - 20:55</th>
+            <td rowspan="2" class="dwees">Desarrollo Web en Entorno Servidor</td>
+            <td rowspan="2" class="dwees">Desarrollo Web en Entorno Servidor</td>
+            <td rowspan="2" class="dwees">Desarrollo Web en Entorno Servidor</td>
+            <td rowspan="2" class="dwees">Desarrollo Web en Entorno Servidor</td>
+            <td rowspan="2" class="eeie">Empresa e Iniciativa Emprendedora</td>
+       </tr>
+       <tr>
+            <th>20:55 - 21:45</th>
+
+       </tr>
+    </table>
+</body>
+</html>
