@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:     </label>
+            <label for="apellidos">Apellidos:   </label>
+            <label for="dni">DNI:   </label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="apellido" id="apellidos">
+            <input type="text" name="dni" id="dni">
+            <br>
+            <label for="lugar_nacimiento">Lugar de Nacimiento:     </label>
+            <label for="provincia">Provincia:   </label>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:   </label>
+            <br>
+            <input type="text" name="lugar_nacimiento" id="lugar_nacimiento">
+            <select name="provincia" id="provincia">
+                <option value="Cáceres">Cáceres</option>
+                <option value="Badajoz">Badajoz</option>
+            </select>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Forma de Acceso</legend>
+            <input type="radio" name="Directo" id="">
+            <label for="">Directo</label>
+                
+            <br>
+            <input type="radio" name="Prueba Libre" id="">
+            <label for="">Prueba Libre</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Documentos Adjuntados</legend>
+            <input type="checkbox" name="Fotocopia DNI" id="">
+            <label for="">Fotocopia DNI         </label>
+            <input type="checkbox" name="Certificado Academico" id="">
+            <label for="certificado">Certificado Académico</label>
+            <br>
+            <input type="checkbox" name="Fotocopia DNI" id="">
+            <label for="otros">Otros documentos (especifique)</label>
+            <input type="text" name="otros" id="">
+        </fieldset>
+    </form>
+</body>
+</html>
