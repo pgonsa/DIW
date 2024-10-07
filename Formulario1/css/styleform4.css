@@ -1,0 +1,18 @@
+
+body{
+    text-align: justify;
+    margin: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+fieldset{
+    border: none;
+    background-color: plum;
+}
+label.indent{
+    margin-left: 20px;
+}
+button{ 
+    margin: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: gainsboro;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleform5.css">
+    <title>Formulario 8</title>
+</head>
+<body>
+    <!--Este formulario puede ser parte de un proceso de compra de fruta on line. 
+    El usuario puede pedir tres clases de frutas de una lista: manzanas, naranjas, 
+    mandarinas. Se debe usar un campo input para recoger la cantidad en forma de número 
+    seguido del nombre de una unidad que puede ser ud o kg o gr. Escribe el formulario 
+    para que solo acepte la cantidad como se indica, ejemplo: 1 ud o 2 kg o 100 gr. 
+    Método de envío GET. (1 punto)-->
+    <form action="procesar.php" method="get">
+        <fieldset>
+            <label for="">Fruta</label>
+            <select name="" id="">
+                <option value="">Manzanas</option>
+                <option value="">Naranjas</option>
+                <option value="">Mandarinas</option>
+            </select>
+            <br>
+            <label for="">Cantidad</label>
+            <br>
+            <input type="text" name="" id="" placeholder="numero unidad">
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

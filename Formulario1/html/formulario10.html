@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleform5.css">
+    <title>Formulario 10</title>
+</head>
+<body>
+    <!--En esta página web vas a colocar un formulario para que un visitante se de de 
+    alta como programador. Los datos opcionales son su ciudad y el teléfono, el resto 
+    es obligatorio. Deberá entrar su nombre y señalar que lenguajes de programación 
+    conoce entre javascript, php, python, nodeJS. Estos valores estarán en un fieldset. 
+    Además deberá responder su nivel de inglés: bajo, medio o alto. Método de envío POST. (1 punto)-->
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <label for="">Nombre</label>
+            <input type="text" name="" id="">
+            <br>
+            <label for="">E-mail</label>
+            <input type="email" name="" id="">
+            <br>
+            <label for="">Teléfono</label>
+            <input type="tel" name="" id="">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Lenguajes que conoce</legend>
+            <label for="">JavaScript</label>
+            <input type="checkbox" name="" id="">
+            <br>
+            <label for="">PHP</label>
+            <input type="checkbox" name="" id="">
+            <br>
+            <label for="">NodeJS</label>
+            <input type="checkbox" name="" id="">
+            <br>
+            <label for="">Python</label>
+            <input type="checkbox" name="" id="">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Nivel de inglés</legend>
+            <label for="">Bajo</label>
+            <input type="radio" name="" id="">
+            <br>
+            <label for="">Medio</label>
+            <input type="radio" name="" id="">
+            <br>
+            <label for="">Alto</label>
+            <input type="radio" name="" id="">
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

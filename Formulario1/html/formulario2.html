@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleform2.css">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <!--Se trata de crear una página donde como parte de un sistema de compra de pasajes de barco. 
+    El usuario tendrá que teclear su nombre y elegir una opción de una lista para la clase de su pasaje, 
+    cuyos titulos y valores son: vip / 0, especial / 1, primera / 2, segunda / 3. El método de envío será POST. 
+    (1 punto)-->
+    <form action="procesar.php" method="post"> 
+        <fieldset>
+            <label for="userName" id="userName">Usuario</label>
+            <br>
+            <br>
+            <input type="text" name="userName" id="userName"  placeholder="Nombre de viajero">
+            <br>
+            <br>
+            <label for="text">Tipo de pasaje</label>
+            <select name="tipoPasaje" id="">
+                <option value="0">VIP</option>
+                <option value="1">Especial</option>
+                <option value="2">Primera</option>
+                <option value="3">Segunda</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Enviar: </button>
+        </fieldset>
+    </form>
+</body>
+</html>
