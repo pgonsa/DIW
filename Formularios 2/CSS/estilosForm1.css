@@ -1,0 +1,43 @@
+/*Formulario 1
+*/
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 16px;
+    background-color: #8FBC8F;
+
+}
+fieldset{
+    border: 2px solid #555;
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: white;
+
+}
+#fiel2{
+    margin-top: 2%;
+}
+legend{
+    background-color: white;
+    border: 2px solid #555;
+    text-align: center;
+}
+input{
+    margin-left: 5%;
+}
+
+#center{text-align: center;}
+
+
+#botonCentrado{
+    margin-left: 45%;
+
+}
+#centradoiz{
+    margin-left: 30%;
+}
+#centradoder{
+    margin-left: 10%;
+}

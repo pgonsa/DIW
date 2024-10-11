@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset{border: none;}
+        #center{margin-left: 13%;}
+    </style>
+    <title>Formulario 5</title>
+</head>
+<body>
+    <!--Crea un formulario como el de la imagen para enviar una imagen sobre una receta de una cierta categoría. 
+    Los campos enviados por POST son
+
+    Nombre de receta (maximo 80 caracteres, obligatorio)
+    Tipo de receta (a elegir de un desplegable carne, pescado, fruta)
+    Imagen de la receta, obligatorio
+    Botón enviar
+    El envío será vía POST.-->
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend><h2>Envía tu foto de receta</h2></legend>
+            <br>
+            <label for="">Receta</label>
+            <input type="text" name="" id="" required maxlength="80">
+            <br>
+            <br>
+            <label for="">Tipo de receta</label>
+            <select name="" id="">
+                <option value="">Carne</option>
+                <option value="">Pescado</option>
+                <option value="">Fruta</option>
+            </select>    
+            <br> 
+            <br>               
+            <label for="">Seleccionar archivo</label>
+            <input type="file" name="" id="">
+            <br>
+            <br>
+            <button type="button" id="center">Enviar</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

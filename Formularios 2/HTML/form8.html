@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 8-Calcular Precio</title>
+    <script>
+        function calcularIVA(){
+            const precio=parseFloat(document.getElementById('precio').value);
+            if(isNaN(precio) || precio<0){
+                alert("Precio no válido, por favor ingrese un precio válido (máximo dos decimales)");
+                return;
+            }
+            const iva= parseFloat(document.getElementById('tipoIVA').value);
+            const precioConIVA=precio+(precio*iva/100);
+            document.getElementById('resultado').value=precioConIVA.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <!--Este formulario va a servir para mostrar como se puede usar un form para calcular.
+
+    El formulario consta de:
+
+    Campo para el precio, pero solo debe admitir números con hasta dos decimales
+    Un campo con la opción de IVA reducido(10%) o normal (21%)
+    Un campo no editable para el resultado
+    Botón enviar con el texto calcular
+    El botón calcular es el que hace que se rellene el campo resultado. Para esto necesitas una pequeña función javascript-->
+
+
+    <form action="procesar.php" method="post" onsubmit="calcularIVA()">
+        <fieldset>
+            <legend>Calcular Precio:</legend>
+            <br>
+            <label for="precio">Precio: </label>
+            <input type="text" name="precio" id="precio" inputmode="decimal"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1').replace(/(\.\d{2})\d+/g, '$1');"
+            pattern="^\d+(\.\d{1,2})?$" placeholder="0.00" required><!--Y si, toda esta liada para los dos digitos-->
+            <br>
+            <br>
+            <label for="tipoIVA">Elige el tipo de IVA:</label>
+            <select name="tipoIVA" id="tipoIVA">
+                <option value="10">IVA reducido (10%)</option>
+                <option value="21" selected>IVA normal (21%)</option>
+            </select>
+            <br>
+            <br>
+            <label for="resultado">Precio con IVA:</label>
+            <input type="text" name="resultado" id="resultado" readonly>
+            <br>
+            <br>
+            <button type="button" id="botonCentrado" onclick="calcularIVA()">Calcular</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

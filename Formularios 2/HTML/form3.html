@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 3</title>
+</head>
+<body>
+    <!--Este formulario se va a usar para reservar plaza en las pistas de club de deportes.
+
+    El formulario tiene dos juegos de datos: datos personales y datos de la reserva. Todos son obligatorios.
+
+    Datos personales
+
+    Nombre y un apellido. Ambos empezarán con Mayúscula seguida de minúsculas. Sin caracteres especiales.
+    Un campo opcional de si se es o no miembro del club. Por defecto: si es miembro
+    Correo electrónico
+    Datos del deporte
+
+    Nombre del deporte elegible entre tres: Paddle, Squash y Tenis.
+    Fecha y hora de la reserva
+    Campo check de aceptación: Acepto las normas del club.
+    Para enviar el formulario usar un botón (button) que aparecerá abajo centrado-->
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <br>
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"  required pattern="{A-Z}{a-z}+" placeholder="Nombre">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos">
+            <br>
+            <br>
+            <label for="miembro">¿Eres miembro?</label>
+            <select name="miembro" id="miembro" required>
+                <option value="si" selected>Sí</option>
+                <option value="no">No</option>
+            </select>
+            <br>
+            <br>
+            <label for="email">Correo electónico</label>
+            <input type="email" required>
+            <br>
+        </fieldset>
+        <fieldset id="fiel2">
+            <legend>Datos de reserva</legend>
+            <br>
+            <label for="sport">
+                <input type="radio" name="sport" id="sport">Paddle
+            </label>
+            <label for="sport">
+                <input type="radio" name="sport" id="sport"> Squash
+            </label>
+            <label for="sport">
+            <input type="radio" name="sport" id="sport">Tenis
+            </label>
+            <br>
+            <br>
+            <label for="fecha">Fecha y hora de la reserva: </label>
+            <input type="datetime-local" name="fecha" id="fecha">
+            <br>
+            <br>
+            <label for="acepto">
+                <input type="checkbox" name="acepto" id="acepto"> Acepto las normas del club
+            </label>
+            <br>
+            <br>
+            <button type="button" id="botonCentrado">Enviar</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>

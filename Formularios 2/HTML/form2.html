@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario de Servicio</title>
+</head>
+<body>
+    <!--Debes crear un formulario para una págna web con el título Formulario de Servicio. Los campos del formulario son
+    Nombre: requerido y de 40caracteres máximo
+    Apellidos: requerido y de 60 cars máximo
+    Edad, número entre 18 y 90
+    Email, del tipo email, requerido
+    Password, requerido
+    Género, opciones excluyentes Hombre Mujer Otro. Requerido
+    Dispositivos seleccionables: Macbook, iPhone, Ipad.
+    Como nos conociste, desplegable opciones red social, buscador (por defecto), amigos, otros.
+    Cláusula de suscripción: Deseo subscribirne a la lista de correo
+    Botón de envío con el texto Contactar
+    Los datos del formulario se enviarán con el método POST a procesar.php-->
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="40" required oninput="limitarCaracteres(this, 40)">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="" maxlength="60" required placeholder="Apellidos" oninput="limitarCaracteres(this, 60)">
+            <br>
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="90" placeholder="Edad" pattern="\d{2}">
+            <br>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <br>
+            <br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" required placeholder="Contraseña">
+            <br>
+            <br>
+            <label for="gender">
+                <input type="radio" name="gender" id="gender" required>Mujer
+            </label>
+            <br>
+            <br>
+            <label for="gender">
+                <input type="radio" name="gender" id="gender" required>Hombre
+            </label>
+            <br>
+            <br>
+            <label for="">
+                <input type="radio" name="gender" id="gender" required>Otro
+            </label>
+            <br>
+            <hr>
+            <br>
+            <label for="dispositivos">Dispositivos</label>
+            <select name="dispositivos" id="">
+                <option value="macbook">Macbook</option>
+                <option value="iphone">iPhone</option>
+                <option value="ipad">Ipad</option>
+            </select>
+            <br>
+            <br>
+            <label for="infoextra">¿Cómo nos conocistes?</label>
+            <select name="infoextra" id="infoextra">
+                <option value="redes sociales">Redes sociales</option>
+                <option value="buscador">Buscador</option>
+                <option value="amigos">Amigos</option>
+                <option value="otros">Otros</option>
+            </select>
+            <br>
+            <hr>
+            <br>
+            <input type="checkbox" name="deseo" id="deseo" checked>
+            <label for="deseo">Deseo recibir información sobre novedades y ofertas</label>
+            <br>
+            <input type="checkbox" name="acepto" id="acepto" required>
+            <label for="acepto">Acepto las condiciones generales del sitio sobre protección de datos</label>
+            <br>
+            <br>
+            <button type="submit" id="botonCentrado">Contactar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

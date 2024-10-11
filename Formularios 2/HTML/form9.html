@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 9</title>
+</head>
+<body>
+    <!--Se trata de crear un formulario para un checkout y pago con tarjeta de un servicio.
+
+    Los campos que llevará este formulario son
+
+    Número de tarjeta, 16 números sin espacios, obligatorio
+    Nombre del titular, obligatorio
+    Mes de caducidad, un select de 1 a 12, obligatorio
+    Año de caducidad, un select con años de 2024 a 2028
+    Código de seguridad CVV, solo admitirá tres números y en forma oculta, como una password. Obligado
+    Campo opcional de texto para notas de 60 columnas y 2 filas
+    Casilla de validación con el texto Guardar datos para otras compras
+    Un boton (button) de envío (pagar) y otro de cancelación (cancelar).
+    Como en los restantes ejemplos el resultado se envía a procesar.php.-->
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Datos de la tarjeta: </legend>
+            <br>
+            <label for="">Número de la tarjeta:</label>
+            <input type="text" name="" id="" required  inputmode="numeric" oninput="this.value=this.value.replace(/\D/g,'')" maxlength="16" minlength="16" pattern="\d{16}"  placeholder="0000000000000000">
+            <!--He puesto type="text" porque es la única manera de conseguir que deje meter solo 16 dígitos-->
+            <br>
+            <br>
+            <label for="">Titular de la tarjeta: </label>
+            <input type="text" name="" id="" required placeholder="Nombre Apellido Apellido">
+            <br>
+            <br>
+            <label for="">Mes de caducidad:</label>
+            <label for="">Año de caducidad: </label>
+            <label for="">CVV: </label>
+            <br>
+            <br>
+            <select name="" id="" required>
+                <option value="seleccione" selected>---Seleccione---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="" id="" required>
+                <option value="seleccione" selected>---Seleccione---</option>
+                <option value="">2024</option>
+                <option value="">2025</option>
+                <option value="">2026</option>
+                <option value="">2027</option>
+                <option value="">2028</option>
+            </select>
+            <input type="password" name="" id="" required inputmode="numeric" oninput="this.value=this.value.replace(/\D/g,'')" maxlength="3"  max="999" min="000"  placeholder="000" pattern="\d{3}">
+            <br>
+            <br>
+            <label for="">Notas (opcional):</label>
+            <br>
+            <br>
+            <textarea name="" id="" cols="60" rows="2" placeholder="Escribe aquí..."></textarea>
+            <br>
+            <br>
+            <label for="">
+                <input type="checkbox" name="" id="">Guardar datos:
+            </label>
+            <br>
+            <br>
+            <button type="button" id="centradoiz">Pagar</button>
+            <button type="reset" id="centradoder">Cancelar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <!--Crea una página web con título Formulario de registro que contenga un formulario con las siguientes condiciones:
+
+    El nombre, con un control de tipo texto (max 20 caracteres).
+    Los apellidos, con un control de tipo texto (max 20 caracteres).
+    El sexo, con dos opciones excluyentes hombre o mujer.
+    El correo electrónico.
+    Una casilla de verificación con el texto Deseo recibir información sobre novedades y ofertas (activada por defecto).
+    Una casilla de verificación con el texto Acepto las condiciones generales del sitio sobre protección de datos.
+    Un botón de envío.
+    Nombre, apellidos y email son obligatorios.-->
+    <form action="procesar.php" method="post">
+        <fieldset id="fiel11">
+            <legend>Formulario de Registro</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="20" required oninput="limitarCaracteres(this, 20)" placeholder="Nombre">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" maxlength="20"required oninput="limitarCaracteres(this, 20)" placeholder="Apellidos">
+            <br>
+            <br>
+            <label for="sexo">
+                <input type="radio" name="sexo" id="">Mujer
+            </label>
+            <br>
+            <label for="sexo">
+                <input type="radio" name="sexo" id="">Hombre
+            </label>
+            <br>
+            <br>
+            <label for="">E-mail</label>
+            <input type="email" name="" id="" required placeholder="E-mail">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset id="fiel2">
+            <input type="checkbox" name="" id="" checked>
+            <label for="">Deseo recibir información sobre novedades y ofertas</label>
+            <br>
+            <br>
+            <input type="checkbox" name="" id="" required>
+            <label for="">Acepto las condiciones generales del sitio sobre protección de datos</label>
+            <br>
+            <br>
+            <button type="submit" id="botonCentrado">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 4</title>
+</head>
+<body>
+    <!--Este formualrio puede usarse para crear una cuenta en una tienda de libros, por ejemplo. 
+    Los datos se envian por POST, la información que se debe recopilar es
+
+    Nombre
+    Apellidos
+    Teléfono (formato xxx xx xx xx)
+    Password (mínimo 8 caracteres)
+    Areas de interés (valores sugeridos programacion diseño y ciencias)
+    Fecha de nacimiento
+    Cláusula de aceptación Acepto los térmnos de protección de datos
+    Abajo de lso campos aparecerá centrado el campo de envío, en forma de input-->
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Tienda de Libros</legend>
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos">
+            <br>
+            <br>
+            <label for="telegono">Teléfono</label>
+            <input type="tel" name="telefono"  id="telefono" required pattern="\d{3} \d{2} \d{2} \d{2}" placeholder="formato xxx xx xx xx">
+            <br>
+            <br>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contrasea" id="contraseña" required min="8" placeholder="contraseña">
+            <br>
+            <br>
+            <label for="programacion">
+                <input type="checkbox" name="programacion" id="">Programación
+            </label>
+            <br>
+            <br>
+            <label for="diseño">
+                <input type="checkbox" name="diseño" id="">Diseño
+            </label>
+            <br>
+            <br>
+            <label for="ciencias">
+                <input type="checkbox" name="ciencias" id="">Ciencias
+            </label>
+            <br>
+            <br>
+            <label for="arquitectura">
+                <input type="checkbox" name="arquitectura" id="">Arquitectura
+            </label>
+            <br>
+            <br>
+            <label for="historia">
+                <input type="checkbox" name="historia" id="">Historia
+            </label>
+            <br>
+            <br>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimient" id="">
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset id="center">
+            <label for="acepto">
+                <input type="checkbox" name="acepto" id="">Acepto los términos de protección de datos
+            </label>
+            <input type="button" value="Enviar">
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>

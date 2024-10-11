@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 10-Búsqueda Avanzada (filtrar)</title>
+</head>
+<body>
+    <!--Crea un formulario de búsqueda avanzada que contendrá los siguientes campos:
+    Palabra clave a buscar
+    Categoría para seleccionar entre Todas, Electrónica, Ropa, Hogar
+    Precio mínimo, número entero
+    Precio máximo, número entero
+    Ordenar por Relevancia o Precio
+    El envío se hará mediante un button. El único campo obilgatorio es el de plabras claves -->
+    <form action="procesar.php" method="get">
+        <fieldset>
+            <legend>Búsqueda avanzada</legend>
+            <br>
+            <label for="buscar">Buscar: </label>
+            <input type="search" name="" id="" required>
+            <br>
+            <br>
+            <label for="categoria">Categoría</label>
+            <select name="categoria" id="">
+                <option value="todas" selected>Todas</option>
+                <option value="electronica">Electrónica</option>
+                <option value="ropa">Ropa</option>
+                <option value="hogar">Hogar</option>
+            </select>
+            <br>
+            <br>
+            <label for="perciomin" >Precio mínimo (De 0 a 100)</label>
+            <input type="range" name="" id="" list="tickmarksmin" min="10" max="100" step="10">
+            <datalist id="tickmarksmin">
+                <option value="0" label="0%">0</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%">100</option>
+              </datalist>
+              <br>
+              <br> 
+            <label for="preciomax" >Precio máximo (de 50 a 1000)</label>
+
+            <input type="range" name="" id="" list="tickmarksmax" min="100" max="1000" step="50">
+            <datalist id="tickmarksmax">
+                <option value="50" label="0%"></option>
+                <option value="100"></option>
+                <option value="200"></option>
+                <option value="300"></option>
+                <option value="400"></option>
+                <option value="500" label="50%"></option>
+                <option value="600"></option>
+                <option value="700"></option>
+                <option value="800"></option>
+                <option value="900"></option>
+                <option value="1000" label="100%">100</option>
+              </datalist>
+              <br>
+              <br>
+              <label for="ordenar">Ordenar por: </label>
+            <select name="" id="">
+                <option value="">Relevancia</option>
+                <option value="">Precio</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" id="botonCentrado">Filtrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Formulario 7</title>
+    <script>
+        function checkColor(event){
+            const colores=["Azul", "Verde", "Rojo", "Naranja", "Rosa", "Marrón"];
+            const colorMaquina=Math.floor(Math.random()*6);
+            const colorSelect=document.getElementById('color').value;
+            if(colores[colorMaquina]===colorSelect){
+                alert('Has acertado!!! El color era '+colores[colorMaquina]);
+                return true;
+            }else{
+                alert('Lo siento, no has acertado. El color era '+colores[colorMaquina]);
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--Este formulario es un poco diferente. Se trata de un juego muy simple, intentar adivinarl el color que 
+    está pensado el ordenador.
+
+    El formulario solo tiene un campo con una lista de colores seleccionable: azul verde, rojo, naranja, rosa, marrón. 
+    Y el botón de enviar. El dato se envía como GET
+
+    El formulario verficará que el color enviado coincide con el color pensado por el ordenador. 
+    Para esto se usa un archivo script que genere un valor entre 0 y 5 (6 colores), 
+    si no aciertas  no se envía el formulario a su action  procesar.php.-->
+    <form action="procesar.php" method="get" onsubmit="checkColor(event)">
+        <fieldset>
+            <legend>Adivina que color estoy pensando</legend>
+            <br>
+            <label for="color">Elige:</label>
+            <select name="color" id="botonCentrado" required >
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Naranja">Naranja</option>
+                <option value="Rosa">Rosa</option>
+                <option value="Marrón">Marrón</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit" id="botonCentrado">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

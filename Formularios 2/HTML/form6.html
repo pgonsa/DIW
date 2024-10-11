@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilosForm1.css">
+    <title>Mensaje al profesor-Formulario 6</title>
+</head>
+<body>
+    <!--Crea un formulario que se podría usar para enviar mensajes internos en una academia. 
+    El titulo del formulario es Mensaje al profesor
+    El formulario tiene los siguientes campos
+    Nombre
+    Turno, elegible entre mañana o tarde
+    Materias, seleccionable de una lista: Física, Química Biología, Matemáticas
+    Mensjae de texto, con un máximo de 30 columnas y 4 filas.
+    Input para enviar
+    Además existirá un campo oculto con el nombre origen y cuyo valor será valor Academia-->
+    
+    <form action="procesar.php" method="post">
+        <fieldset>
+            <legend>Mensaje al profesor</legend>
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+            <br>
+            <br>
+            <label for="turno">Turno:
+                <input type="radio" name="turno" id="">Mañana
+                <input type="radio" name="turno" id="">Tarde
+            </label>
+            <br>
+            <br>
+            <label for="materias">Materias:</label>
+            <select name="materias" id="" required>
+                <option value="fisica">Física</option>
+                <option value="biologia">Biología</option>
+                <option value="quimica">Química</option>
+                <option value="matematicas">Matemáticas</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Mensaje:</label>
+            <br>
+            <br>
+            <textarea name="" id="" cols="30" rows="4" placeholder="Escribe aquí..."></textarea>
+            <br>
+            <br>
+            <input type="button" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
