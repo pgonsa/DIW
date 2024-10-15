@@ -8,11 +8,4 @@ h1{
     margin-left: 30px;/*cabecera h1 a 30px del margen izquierdo*/
     color: navy;/*y en color azul*/
 }
-/*  EJERCICIO 4:
-*Elimina todos los estilos, excepto la hoja de estilo externa “miestilo.css”.
-*Sugerencia: elimine la hoja de estilo interna y el estilo en línea.
-*/
-body{
-    background-color: lavender;
-}
 
