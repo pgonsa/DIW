@@ -1,0 +1,18 @@
+/*EJERCICIO 1:
+*Agrega una hoja de estilo externa con el nombre: "miestilo.css", con ella deberás poner la
+*cabecera (h1) a 30px del margen izquierdo y en color azul (navy)
+*Sugerencia: agregue un elemento <link> en <head> El elemento <link> debe tener los atributos "rel", "type" y
+*"href".-->
+*/
+h1{
+    margin-left: 30px;/*cabecera h1 a 30px del margen izquierdo*/
+    color: navy;/*y en color azul*/
+}
+/*  EJERCICIO 4:
+*Elimina todos los estilos, excepto la hoja de estilo externa “miestilo.css”.
+*Sugerencia: elimine la hoja de estilo interna y el estilo en línea.
+*/
+body{
+    background-color: lavender;
+}
+
