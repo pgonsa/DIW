@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio tablas</title>
+    <style>
+         table {
+            width: 100%;
+            border: 3px solid black;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        /*A. Caption-side*/
+        /*.a { caption-side: bottom; }
+        .b { caption-side: top; }*/
+        /*B. table-layout*/
+        /*.a { table-layout: auto; }
+        .b { table-layout: auto; width: 100%; }
+        .c { table-layout: fixed; width: 200px; }*/
+        /*C. Border-collapse*/
+       /* .a { border-collapse: separate; }
+        .b { border-collapse: collapse; }*/
+       /* D. Border-spacing*/
+        /*.a { border-collapse: separate; border-spacing: 50px 10px;}
+        .b { border-collapse: collapse; border-spacing: 40px;} /* border-spacing solo tiene efecto cuando
+            border-collapse: separate; */
+       /* .c { border-spacing: 0;} /* border-spacing: 0 es igual qu eborder-collapse: collapse */
+        /*E. Empty-cells*/
+        .a { empty-cells: hide; }
+        .b { empty-cells: show; }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio de Estilos en Tablas</h1>
+
+    <!-- A. Caption-side -->
+    <h2>A. Caption-side</h2>
+    <table class="a">
+        <caption>Tabla con caption abajo</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+        <tr>
+            <td>Fila 2</td>
+            <td>Fila 2</td>
+            <td>Fila 2</td>
+        </tr>
+    </table>
+
+    <table class="b">
+        <caption>Tabla con caption arriba</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+        <tr>
+            <td>Fila 2</td>
+            <td>Fila 2</td>
+            <td>Fila 2</td>
+        </tr>
+    </table>
+
+    <!-- B. Table-layout -->
+    <h2>B. Table-layout</h2>
+    <table class="a">
+        <caption>Layout auto</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <table class="b">
+        <caption>Layout auto con width 100%</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <table class="c">
+        <caption>Layout fixed con width 200px</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <!-- C. Border-collapse -->
+    <h2>C. Border-collapse</h2>
+    <table class="a">
+        <caption>Border-collapse: separate</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <table class="b">
+        <caption>Border-collapse: collapse</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <!-- D. Border-spacing -->
+    <h2>D. Border-spacing</h2>
+    <table class="a">
+        <caption>Border-spacing: 50px 10px</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <table class="b">
+        <caption>Border-spacing: 40px</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <table class="c">
+        <caption>Border-spacing: 0 (equivalente a collapse)</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <!-- E. Empty-cells -->
+    <h2>E. Empty-cells</h2>
+    <table class="a">
+        <caption>Empty-cells: hide</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td></td> <!-- Celda vacía -->
+            <td>Fila 1</td>
+        </tr>
+    </table>
+
+    <table class="b">
+        <caption>Empty-cells: show</caption>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td>Fila 1</td>
+            <td></td> <!-- Celda vacía -->
+            <td>Fila 1</td>
+        </tr>
+    </table>
+</body>
+</html>
