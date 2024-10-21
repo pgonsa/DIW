@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        body{
+            font-size: 14px;
+        }
+        a{text-decoration: none;
+            color: green;}
+        a:hover{text-decoration: none;}
+        a:active{text-decoration: none;}
+        a:visited{color: red;}
+        table {
+            width: 100%;
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            text-align: center;
+        }
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th::first-letter{font-size: 28px;}
+        tbody td:nth-child(1){background-color: green;}
+        #recreo td:nth-child(2){background-color: yellow;
+                                text-align: center;}
+        td:last-child:hover{font-size: 28px;}
+        input{
+            border-color: red;
+        }
+        label b{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Ejercicio propuesto
+    Realiza el siguiente horario de clases para que quede lo más parecido posible al de la figura adjunta.
+    Debes usar:
+     Pseudo-selectores para dar color de fondo verde a las casillas que contienen horas.
+     Pseudo-selectores a las celdas de recreo con fondo amarillo
+     Cambiar los estados de los enlaces para que nunca estén subrayados, si están visitados se
+    muestren en rojo, si no están visitados se muestren en verde.
+     Usando pseudo-selectores hacer que cuando pasemos el ratón sobre la columna del viernes
+     aumente el tamaño de letra al doble.
+     Utilizando Pseudoelementos Haz que la primera letra de los días tenga el doble de -->
+    <h1><a href="https://openwebinars.net/" target="_blank" rel="noopener noreferrer">HORARIO DE CLASE CURSO 2018-2019</a></h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>LUNES</th>
+                <th>MARTES</th>
+                <th>MIÉRCOLES</th>
+                <th>JUEVES</th>
+                <th>VIERNES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+
+            </tr>
+            <tr>
+                <td>9:00</td>
+
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr id="recreo">
+                <td>10:00</td>
+                
+                <td colspan="5">RECREO</td>
+                
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <label for="">Email<b>*</b>
+        <input type="email" name="email" id="email" placeholder="Inserte email del destinario">
+    </label>
+    <br>
+    <br>
+    <button type="button">Enviar Horario</button>
+</body>
+</html>
